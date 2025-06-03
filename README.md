@@ -74,6 +74,6 @@ Show a screenshot with:
 
 ## 👤 Author
 
-Built with ❤️ by [Your Name]  
-[LinkedIn] | [GitHub] | [Email]
+Built with ❤️ by A Amrith Sebastin 
+Amrithseb2006 | amrithsebastin20@gmail.com
 
