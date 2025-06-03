@@ -1,90 +1,79 @@
-This project is a Q&A chatbot that extracts and answers questions about invoice images using Google’s Gemini 1.5 Flash model and a clean Streamlit frontend.
+# 🤖 AccuInvex AI
 
-🌟 Features
-Upload invoice images in .jpg, .jpeg, or .png format
+**AccuInvex AI** is a powerful and intelligent invoice extraction tool that blends **AI precision** with **automated document understanding**. Using Google’s **Gemini 1.5 Flash** model and an intuitive **Streamlit** interface, this app allows users to upload invoice images and ask natural language questions to extract key information instantly.
 
-Ask questions like “What is the invoice number?”, “What is the total amount?”
+---
 
-Uses Google’s Gemini model to interpret and extract details from invoices
+## 🚀 Features
 
-Simple and interactive web interface built with Streamlit
+- 📸 Upload invoice images in JPG, JPEG, or PNG formats
+- 💬 Ask natural language questions (e.g., “What is the total amount?”, “List the purchased items”)
+- 🧠 Uses Gemini AI to interpret invoice layout and content
+- ⚡ Real-time responses with structured, accurate information
+- 🖥️ Clean and interactive UI using Streamlit
 
-Displays both the uploaded image and the response
+---
 
-🛠 Technologies Used
-Python – Backend logic
+## 🛠 Tech Stack
 
-Streamlit – Web interface
+- **Python** – Core logic
+- **Streamlit** – Frontend UI
+- **Google Generative AI (Gemini 1.5 Flash)** – Image and language understanding
+- **PIL (Pillow)** – Image handling and display
+- **dotenv** – Secure API key management
 
-Google Generative AI – Image understanding (Gemini 1.5 Flash)
+---
 
-PIL (Python Imaging Library) – Image processing and display
+## 🧠 How It Works
 
-dotenv – Securely manage API keys
+1. A user uploads an invoice image.
+2. They type a question related to the invoice (like "What is the invoice date?" or "How much is the tax?").
+3. A predefined system prompt tells Gemini to treat the image as an invoice.
+4. The image and question are processed by Gemini 1.5 Flash.
+5. The AI returns a detailed, contextual answer, which is shown on the screen.
 
-🧠 How It Works
-The user uploads an image of an invoice.
+---
 
-The user types a question such as:
+## 🎯 Use Case Scenarios
 
-“What is the invoice date?”
+- Automating financial data entry from scanned invoices
+- Auditing and verifying invoice information
+- Extracting line items, tax details, and total amounts
+- Streamlining backend operations for accounts payable systems
 
-“What items were purchased?”
+---
 
-“How much GST is charged?”
+## 💡 Future Enhancements
 
-The app sends:
+- 📄 Support for multi-page PDF invoices
+- 🔁 Chat history to allow multiple follow-up questions
+- 📊 Export results in structured formats like CSV, JSON
+- 🧾 Integration with OCR libraries for enhanced layout analysis
+- 🔒 Authentication for secure access and usage tracking
+- 📥 Bulk invoice upload and processing
 
-A system prompt that explains to the model that it is reading an invoice.
+---
 
-The image in byte format.
+## 📸 Demo Suggestion
 
-The user’s question.
+Show a screenshot with:
+- Uploaded invoice image on the left
+- Extracted answers on the right
+- Question box and "Submit" button at the top
 
-Gemini analyzes the image and question, and returns a human-readable response.
+---
 
-The app displays the answer below the image.
+## 🙌 Acknowledgements
 
-🗂 Code Overview
-Environment Setup
+- Google Generative AI (Gemini)
+- Streamlit
+- Pillow (PIL)
+- python-dotenv
 
-API key is loaded using dotenv for secure configuration.
+---
 
-Gemini Response Function
+## 👤 Author
 
-Accepts a question, image, and system prompt, and calls Gemini 1.5 Flash.
-
-Image Preprocessing
-
-Uploaded image is converted to byte format with MIME type.
-
-Streamlit UI
-
-Provides input prompt, file uploader, and displays the image and model response.
-
-Prompt Template
-
-A fixed instruction telling Gemini that the image will be an invoice and it must answer questions based on it.
-
-🎯 Use Case Examples
-Automate data entry from scanned invoices
-
-Perform audits on invoices by querying specific fields
-
-Extract line items, dates, totals, and tax information
-
-Build backend logic for financial automation workflows
-
-💡 Future Improvements
-Add support for multi-page PDF invoices
-
-Enable chat history for multiple Q&A rounds
-
-Export structured data (like tables or JSON formats)
-
-Improve invoice layout understanding with template-based OCR fallback
-
-Add data validation rules for known invoice patterns
-
-Allow users to download extracted data
+Built with ❤️ by [Your Name]  
+[LinkedIn] | [GitHub] | [Email]
 
